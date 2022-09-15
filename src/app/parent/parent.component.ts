@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  constructor() { }
+  constructor() { console.log("Parent Constructor"); }
 
   ngOnInit(): void {
+
+    console.log("Parent OnInit()");
   }
 
 }
