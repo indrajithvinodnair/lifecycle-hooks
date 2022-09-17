@@ -1,2 +1,9 @@
 <h2>Parent Component</h2>
-<app-child></app-child>
+
+<input type="text" [(ngModel)]="channelName">
+
+<app-child [channelName]="channelName">
+    <h2 #projectedContent>Content projection from parent to child</h2>
+
+
+</app-child>
